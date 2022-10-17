@@ -13,14 +13,14 @@ const FilmInfo = () => {
             const res = await axios.get(`http://www.omdbapi.com/?apikey=${key}&t=${title}`);
             setFilm(res.data);
             console.log(res);
-        } 
+        }
         getFilm();
     }, [title]);
     return (
         <div>
             <input type="text" value={title} onChange={e => setTitle(e.target.value)} />
             <h1>{film.Title}</h1>
-            <img src={film.Poster}/>
+            <img src={film.Poster} />
             <p>Directed by: {film.Director}</p>
             <p>Genre: {film.Genre}</p>
             <p>Description: {film.Plot}</p>
