@@ -7,6 +7,8 @@ import Login from './Credentials';
 import Content from './ContentComponent';
 import SubContent from './SubContent';
 import UserDisplay from './LogInControl';
+import EmployeeInfo from './Employee';
+import FilmInfo from './FilmRequest';
 
 function App() {
 
@@ -40,8 +42,10 @@ function App() {
     {/* <Content/>
     <br/>
     <SubContent/> */}
-    <UserDisplay/>
+    {/* <UserDisplay/> */}
+    <FilmInfo/>
     </>
+  
   )
 }
 
