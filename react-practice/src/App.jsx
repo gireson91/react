@@ -1,17 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
-import MyComponent from './MyComponent';
-import PropComp from './Props'
-import MilesAhead from './MilesAhead';
-import Login from './Credentials';
-import Content from './ContentComponent';
-import SubContent from './SubContent';
-import UserDisplay from './LogInControl';
-import EmployeeInfo from './Employee';
-import FilmInfo from './FilmRequest';
+
+import Shopping from './Shopping';
 
 function App() {
-
   // function printInput(event) {
   //   // print the inputs name and its value
   //   console.log("EVENT:", event);
@@ -33,20 +24,21 @@ function App() {
   // // )};
   return (
     <>
-    {/* <MyComponent/>
+      {/* <MyComponent/>
     <PropComp/>
     <MilesAhead/> */}
-    {/* <EventExample/>
+      {/* <EventExample/>
     <br/>
     <Login/> */}
-    {/* <Content/>
+      {/* <Content/>
     <br/>
     <SubContent/> */}
-    {/* <UserDisplay/> */}
-    <FilmInfo/>
+      {/* <UserDisplay/> */}
+      {/* <FilmInfo/> */}
+      <Shopping />
     </>
-  
-  )
+
+  );
 }
 
 export default App;
