@@ -8,6 +8,8 @@ import PropComp from './Components/Props';
 import MyComponent from './Components/Comp_practice/MyComponent';
 import Home from './Components/Home';
 import Users from './Components/Users';
+import FilmInfo from './Components/FilmRequest';
+import SubContent from './Components/SubContent';
 
 function App() {
   return (
@@ -17,6 +19,9 @@ function App() {
       </Link>
       <Link to="/users">
         Users
+      </Link>
+      <Link to="/films">
+        Films
       </Link>
       <Link to="/myComponent">
         My Component
@@ -36,16 +41,21 @@ function App() {
       <Link to="/game">
         Game
       </Link>
+      <Link to="/subcontent">
+        SubContent
+      </Link>
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/users" element={<Users />} />
         <Route path="/users/:id" element={<Users />} />
+        <Route path="/films" element={<FilmInfo />} />
         <Route path="/myComponent" element={<MyComponent />} />
         <Route path="/propComp" element={<PropComp />} />
         <Route path="/milesAhead" element={<MilesAhead />} />
         <Route path="/login" element={<Login />} />
         <Route path="/shopping" element={<Shopping />} />
         <Route path="/game" element={<Game />} />
+        <Route path="/subcontent" element={<SubContent />} />
       </Routes>
     </Router>
   );

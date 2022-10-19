@@ -1,6 +1,10 @@
 const Person = (props => {
     return(
-        <p>This is {props.name}, they are from {props.city}</p>
+        <table>
+            <tr>
+                <td>This is {props.name}, they are from {props.city}</td>
+            </tr>
+        </table>
     )
 })
 

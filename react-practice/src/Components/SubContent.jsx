@@ -1,4 +1,4 @@
-import sampleData from './sampleData.json'
+import sampleData from '../sampleData.json'
 import Person from './Person'
 
 const SubContent = () => {
