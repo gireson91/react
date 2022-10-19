@@ -1,43 +1,53 @@
 import './App.css';
-
-import Shopping from './Shopping';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Shopping from './Components/Shopping/Shopping';
+import Game from './Components/Game/Game';
+import MilesAhead from './Components/MilesAhead';
+import Login from './Components/Credentials';
+import PropComp from './Components/Props';
+import MyComponent from './Components/Comp_practice/MyComponent';
+import Home from './Components/Home';
+import Users from './Components/Users';
 
 function App() {
-  // function printInput(event) {
-  //   // print the inputs name and its value
-  //   console.log("EVENT:", event);
-  //   console.log(event.target.name, ":", event.target.value);
-  // }
-
-  // // const EventExample = () => {
-  // //   return (
-  // //   <>
-  // //     <label htmlFor="a">A:</label>
-  // //     <input type="text" name="a" id="a" onChange={printInput}/>
-  // //     <br/>
-  // //     <label htmlFor="b">B:</label>
-  // //     <input type="text" name="b" id="b" onChange={printInput}/>
-  // //     <br/>
-  // //     <label htmlFor="c">C:</label>
-  // //     <input type="text" name="c" id="c" onChange={printInput}/>
-  // //   </>
-  // // )};
   return (
-    <>
-      {/* <MyComponent/>
-    <PropComp/>
-    <MilesAhead/> */}
-      {/* <EventExample/>
-    <br/>
-    <Login/> */}
-      {/* <Content/>
-    <br/>
-    <SubContent/> */}
-      {/* <UserDisplay/> */}
-      {/* <FilmInfo/> */}
-      <Shopping />
-    </>
-
+    <Router>
+      <Link to="/home">
+        Home
+      </Link>
+      <Link to="/users">
+        Users
+      </Link>
+      <Link to="/myComponent">
+        My Component
+      </Link>
+      <Link to="/propComp">
+        Prop Component
+      </Link>
+      <Link to="/milesAhead">
+        Miles Ahead
+      </Link>
+      <Link to="/login">
+        Login
+      </Link>
+      <Link to="/shopping">
+        Shopping
+      </Link>
+      <Link to="/game">
+        Game
+      </Link>
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/users" element={<Users />} />
+        <Route path="/users/:id" element={<Users />} />
+        <Route path="/myComponent" element={<MyComponent />} />
+        <Route path="/propComp" element={<PropComp />} />
+        <Route path="/milesAhead" element={<MilesAhead />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/shopping" element={<Shopping />} />
+        <Route path="/game" element={<Game />} />
+      </Routes>
+    </Router>
   );
 }
 
