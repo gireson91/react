@@ -10,39 +10,43 @@ import Home from './Components/Home';
 import Users from './Components/Users';
 import FilmInfo from './Components/FilmRequest';
 import SubContent from './Components/SubContent';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {
+  Button, Col, Container, Nav, Row,
+} from 'react-bootstrap';
 
 function App() {
   return (
     <Router>
       <Link to="/home">
-        Home
+        <Button variant='primary' type='button'>Home</Button>
       </Link>
       <Link to="/users">
-        Users
+        <Button variant='primary' type='button'>Users</Button>
       </Link>
       <Link to="/films">
-        Films
+        <Button variant='primary' type='button'>Films</Button>
       </Link>
       <Link to="/myComponent">
-        My Component
+        <Button variant='primary' type='button'>My Component</Button>
       </Link>
       <Link to="/propComp">
-        Prop Component
+        <Button variant='primary' type='button'>Prop Comp</Button>
       </Link>
       <Link to="/milesAhead">
-        Miles Ahead
+        <Button variant='primary' type='button'>Miles Ahead</Button>
       </Link>
       <Link to="/login">
-        Login
+        <Button variant='primary' type='button'>Login</Button>
       </Link>
       <Link to="/shopping">
-        Shopping
+        <Button variant='primary' type='button'>Shopping</Button>
       </Link>
       <Link to="/game">
-        Game
+        <Button variant='primary' type='button'>Game</Button>
       </Link>
       <Link to="/subcontent">
-        SubContent
+        <Button variant='primary' type='button'>Sub Content</Button>
       </Link>
       <Routes>
         <Route path="/home" element={<Home />} />

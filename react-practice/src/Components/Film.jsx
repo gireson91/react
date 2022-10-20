@@ -1,24 +1,24 @@
-const Film = ({title, poster, director, genre, plot, rated}) => {
+const Film = () => {
     return(
         <>
-            <h1>{title}</h1>
-            <img src={poster} />
-            <table className={styles.table}>
+            <h1>{film.title}</h1>
+            <img src={film.poster} />
+            <table>
                 <tr>
                     <td>Directed by:</td>
-                    <td>{director}</td>
+                    <td>{film.director}</td>
                 </tr>
                 <tr>
                     <td>Genre:</td>
-                    <td>{genre}</td>
+                    <td>{film.genre}</td>
                 </tr>
                 <tr>
                     <td>Description:</td>
-                    <td>{plot}</td>
+                    <td>{film.plot}</td>
                 </tr>
                 <tr>
                     <td>Rating:</td>
-                    <td>{rated}</td>
+                    <td>{film.rated}</td>
                 </tr>
             </table>
         </>
